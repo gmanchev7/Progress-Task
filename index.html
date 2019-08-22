@@ -1,0 +1,57 @@
+<!doctype html>
+<html ng-app="todoApp">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <script src="angular.js"></script>
+  <script src="app.js"></script>
+  <script src="features/expandCollapse.js"></script>
+  <script src="mock-data.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about/about-view.html">About</a>
+
+
+  </nav>
+
+</header>
+
+
+<body ng-controller="AppController">
+
+
+
+  <div ng-controller="AppController as data">
+    <div class="card" ng-repeat="information in data.todos.projects ">
+      <h3> {{information.title}} </>
+        </h5>
+        <button ng-hide="active" id="read-more-btn" ng-click="active = !active"
+          ng-class="{'expandcollapse-heading-collapsed': active}">Read More..</button>
+        <button ng-hide="!active" id="read-more-btn" ng-click="active = !active"
+          ng-class="{'expandcollapse-heading-expanded': !active}">Read Less..</button>
+        <div ng-hide="!active">
+          <h4> Comments:{{information.comments}} </h4>
+          <h4> Date: {{information.publish_date}} </h4>
+          <h4> Contact Name: {{information.contact_name}} </h4>
+          <h4> Location: {{information.location_city}} </h4>
+          <h4> Description: {{information.description}} </h4>
+        </div>
+    </div>
+
+
+  </div>
+  </div>
+
+  </div>
+
+
+
+</body>
+
+</html>

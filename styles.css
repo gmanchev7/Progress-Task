@@ -1,0 +1,66 @@
+.card {
+  box-shadow: 0 4px 8px 0 black;
+  transition: 0.3s;
+  margin: 20px;
+  padding: 20px;
+  top: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 grey;
+}
+
+.container {
+  padding: 28px;
+  text-align:justify;
+  text-justify:inter-word;
+}
+
+main {
+  color: white;
+}
+
+#read-more-btn{
+  background: greenyellow;
+  border-radius: 30px black;
+  color: white;
+  bottom: 40px;
+  left: 90%;
+  width: 10%;
+  height: 30px;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+
+#background {
+  height: 125vh;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+a{
+  color:white;
+}
+
+header * {
+  display: inline;
+}
+
+header li {
+  margin: 20px;
+}
+
+body{
+    height: 100%;
+    padding-top: 44px;
+}

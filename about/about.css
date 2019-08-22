@@ -1,0 +1,66 @@
+header {
+     background-color: rgb(0, 0, 0);
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     height: 70px;
+     display: flex;
+     align-items: center;
+}
+a {
+     color: white;
+}
+
+header * {
+     display: inline;
+}
+
+header li {
+     margin: 20px;
+}
+
+body,
+html {
+     height: 80%;
+     background-image: url('https://thehighdefinitionwallpapers.com/blog/image/data/730/500/Inspire-Friendship-freedom-and-love-forever-friends.jpg');
+
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 100%;
+     background-position: center;
+}
+
+* {
+     box-sizing: border-box;
+}
+
+.bg-image {
+
+     filter: blur(8px);
+     -webkit-filter: blur(8px);
+
+     height: 100%;
+
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.bg-text {
+     background-color: rgb(0, 0, 0);
+     /* Fallback color */
+     background-color: rgba(0, 0, 0, 0.4);
+     /* Black w/opacity/see-through */
+     color: white;
+     font-weight: bold;
+     border: 3px solid #f1f1f1;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 2;
+     width: 80%;
+     padding: 20px;
+     text-align: center;
+}
